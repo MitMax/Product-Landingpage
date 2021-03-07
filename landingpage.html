@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Landing Page</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #main{
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #header{
+      background: #D8D7D6;
+      width: 100%;
+      height: 80px;
+      font-size: 23px;
+      position: fixed;
+      top: 0;
+    }
+
+    #header-img{
+
+    }
+
+    .logo{
+      max-width: 150px;
+      max-height: 100px;
+      display: flex;
+    }
+
+    .head{
+      display: flex;
+      margin: 50px;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .link{
+      text-decoration: none;
+      background: orange;
+      border-radius: 50px;
+      padding: 10px;
+      width: 30%;
+      text-align: center;
+    }
+
+    .link:visited{
+      color: black;
+      text-decoration: none;
+    }
+
+    #nav-bar{
+      text-decoration: none;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .nav-link{
+      text-decoration: none;
+      color: black;
+    }
+
+    .nav-link:visited{
+      color: black;
+      text-decoration: none;
+    }
+
+    #pricing{
+      width: 350px;
+      height: 450px;
+      background: #BEBCBC;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 5px;
+      border-radius: 10px;
+    }
+
+    .price-heading{
+
+    }
+
+    .img{
+      max-width: 40%;
+    }
+
+    .grid-container {
+  display: grid;
+  margin-left: 18%;
+  margin-right: 18%;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15% 15%;
+  grid-template-areas:
+    "feature1 feature2"
+    "feature3 feature4";
+}
+
+.feature1 { grid-area: feature1; }
+.feature2 { grid-area: feature2; }
+.feature3 { grid-area: feature3; }
+.feature4 { grid-area: feature4; }
+
+
+    .video{
+      text-align: center;
+      height: 630px;
+    }
+
+    #form{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .email{
+      border-radius: 10px;
+      border: none;
+      background: #E4E4E4;
+    }
+
+    .form_label{
+      display: flex;
+      align-self: center;
+      font-size: 17px;
+    }
+
+    @media only screen and (max-width: 724px){
+      body{
+        font-size: 20px;
+      }
+      .grid-container{
+        margin-top: 8%;
+      }
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <header id="header">
+
+      <nav id="nav-bar">
+
+          <img id="header-img" class="logo" src="./pic/logo.png">
+
+        <div class="pricing">
+          <p><a class="nav-link" href="#pricing">Pricing</a></p>
+        </div>
+        <div class="features">
+          <p><a class="nav-link" href="#features">Features</a></p>
+        </div>
+        <div class="how-it-works">
+          <p><a class="nav-link" href="#video">How it works</a></p>
+        </div>
+      </nav>
+    </header>
+
+    <div id="main">
+      <div class="head">
+
+      <img class="img"src="./pic/tracker.jpg" alt="a picture of the eyetracker">
+
+      <div id="pricing">
+        <h2 class="price-heading">Tobii Eye Tracker 5</h2>
+        <p>Tobii Eye Tracker 5 is the next generation of head and eye tracking, engineered for PC gaming. The only device capable of tracking both head and eye movements for game interaction, esports training, and streaming, Tobii Eye Tracker 5 is a revolutionary new way to play and compete in your favorite games.</p>
+        <h3 class="price-heading">229€</h3>
+        <a class="link" href="https://gaming.tobii.com/product/eye-tracker-5/" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+    <div id="features" class="grid-container">
+      <div class="feature1">
+        <h3><b>Intelligent sensor technology</b></h3> <br>
+        <p>Under the hood lies a custom-built infrared optical sensor, built specifically for responsiveness, accuracy, and reliability. When tracking is activated, the Tobii Eye Tracker 5 delivers incredible in-game performance and game training capabilities - helping you to maximize your competitiveness and enjoyment.</p>
+      </div>
+
+      <div class="feature2">
+        <h3><b>Made for various shapes</b></h3> <br>
+        <p>Our new flex mount is designed to be universal and adaptable to most flat and curved screens, as it can be mounted underneath the monitor, with additional flat mounts for built-in screens.</p>
+      </div>
+
+      <div class="feature3">
+        <h3><b>Adaptable to a variety of conditions</b></h3> <br>
+        <p>Tobii Eye Tracker 5’s illuminators emit near-infrared light, allowing it to perform exceptionally well in varying light conditions.</p>
+      </div>
+
+      <div class="feature4">
+        <h3><b>Includes powerful security measures</b></h3> <br>
+        <p>The Tobii Eye Tracker 5 is Windows Hello Certified, by using a biometric facial recognition scanner for enterprise-grade password replacement - so you can be sure that no-one can access your computer except you.</p>
+      </div>
+    </div>
+
+    <div class="video">
+      <iframe id="video" width="60%" height="100%" src="https://www.youtube.com/embed/Y7_f-pR8SBY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <br><br>
+
+      <label class="form_label" for="form">Subscribe to the newsletter</label>
+      <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+        <input id="email" class="email" type="email" name="email" placeholder="Enter your email address" required>
+        <br>
+        <input id="submit" type="submit" name="submit" placeholder="Get Updates">
+      </form>
+      <br><br>
+
+    </div>
+  </body>
+</html>
